@@ -1,11 +1,11 @@
 <?php
 
 $urls = array(
-    'http://www.zaixianclock.com/index.html',
+    'http://www.advantechmas.cn/index.html',
    
 );
 
-$api = 'http://data.zz.baidu.com/urls?site=www.zaixianclock.com&token=nZuQPjssREoEgZIw';
+$api = 'http://data.zz.baidu.com/urls?site=www.advantechmas.cn&token=nZuQPjssREoEgZIw';
 $ch = curl_init();
 $options =  array(
     CURLOPT_URL => $api,
