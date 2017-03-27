@@ -1,0 +1,162 @@
+html, body { background-color: #FFF; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0; }
+html { height: 100%; }
+
+a { color: #000099; text-decoration: none; }
+
+/* container modify by Jayson on 20150226*/
+/* #container { width: 960px; margin: 0 auto; }*/
+    #container { width: 960px !important; margin: 0 auto; }
+
+    #container.container2013 { width: 960px; margin: 0 auto; }
+/* Head styles start*/
+#header2010 { width: 100%; /*height: 40px;*/ margin-top: 10px; /*Richie add:*/ overflow: hidden; zoom: 1; }
+#header_search_box { float: right; text-align: right; vertical-align: top; }
+#top_menu #header_search_box img { vertical-align: text-bottom; }
+#logo { float: left; }
+#change_area2010 { float: right; line-height: 40px; font-size: 12px; }
+    #change_area2010 #header-home { padding-right: 5px; margin-right: 7px; border-right: 1px solid #999999; }
+
+    #change_area2010 #header-embedded-home { padding-right: 5px; margin-right: 7px; border-right: 1px solid #999999; }
+
+        #change_area2010 #header-home a, #change_area2010 #header-embedded-home a { color: Black; }
+/* Head styles end*/
+
+/* Menu styles start*/
+
+#top_menu span { padding-left: 14px; padding-right: 14px; float: none; height: 100%; }
+#top_menu a { font-weight: bold; }
+#menu { height: 30px; }
+
+.submenu_title { width: 100%; }
+
+#sddm .submenu_title, #sddm .submenu_title:hover { font-weight: bold; color: #4d4d4d; padding-left: 0px; line-height: 15px; padding: 5px 0px; }
+
+.submemu_category_detail { margin-top: 10px; margin-bottom: 10px; margin-left: 0px; width: 240px; }
+#top_menu .submemu_category_detail span, #top_menu .submenu_title span { padding-left: 0px; }
+.submenu_title span { margin-top: 5px; height: 100%; }
+
+.layer table table { padding: 3px; }
+.layer { border-bottom: 2px solid #ccc; }
+#SubMenu1 table table { margin: 5px; }
+#top_menu { float: left; font-weight: bold; font-size: 13px; line-height: 30px; width: 100%; height: 30px; }
+
+    #top_menu span a { text-decoration: none; color: #767373; }
+    #top_menu img { vertical-align: top; }
+.top_menuLineHome { border-top: 3px solid #e5e5e5; margin-top: 5px; }
+.top_menuLine { border-top: 3px solid #e5e5e5; height: 5px; margin-top: 5px; }
+#search { float: right; line-height: 30px; }
+    #search img { vertical-align: top; line-height: 30px; padding-top: 3px; }
+/* Menu styles end*/
+
+#main_banner { height: 252px; }
+
+#BU_menu { height: 175px; }
+
+#main_news { width: 100%; }
+
+#news_menu { float: left; margin-top: 10px; background-image: url(/images/2010/bg_news.jpg); background-repeat: no-repeat; width: 288px; height: 151px; }
+    #news_menu td { line-height: 16px; text-align: left; }
+#events_menu { float: left; margin-top: 10px; margin-left: 13px; background-image: url("/images/2010/bg_news.jpg"); background-repeat: no-repeat; width: 288px; height: 151px; }
+    #events_menu td { line-height: 16px; text-align: left; }
+#video_menu { float: right; margin-top: 10px; margin-left: 13px; background-image: url("/images/2010/bg_news.jpg"); background-repeat: no-repeat; width: 288px; height: 151px; }
+
+#video_menu_2009 { float: right; margin-top: 0px; margin-left: 13px; background-image: url("/images/2010/bg_video2.jpg"); background-repeat: no-repeat; width: 256px; height: 115px; }
+
+    #video_menu_2009 td { line-height: 12px; text-align: left; }
+#video_menu td { line-height: 16px; text-align: left; }
+
+
+#main_news div .news_menu_container { width: 268px; padding-left: 10px; }
+
+    #main_news div .news_menu_container .news_menu_title { margin-top: 10px; padding-bottom: 5px; margin-bottom: 10px; border-bottom: 1px solid #cccccc; color: #6d6d6d; font-weight: bold; font-size: 13px; }
+
+    #main_news div .news_menu_container .news_menu_detail { height: 85px; font-size: 11px; }
+
+    #main_news div .news_menu_container .news_menu_more { text-align: right; margin-right: 0px; }
+
+
+
+
+#main_news div .news_menu_container_2009 { width: 245px; padding-left: 5px; }
+
+    #main_news div .news_menu_container_2009 .news_menu_title { margin-top: 5px; padding-bottom: 2px; margin-bottom: 5px; border-bottom: 1px solid #cccccc; color: #000000; font-weight: bold; font-size: 12px; }
+
+    #main_news div .news_menu_container_2009 .news_menu_detail { height: 85px; }
+
+    #main_news div .news_menu_container_2009 a { color: Black; }
+
+    #main_news div .news_menu_container_2009 .news_menu_more_2009 { text-align: right; margin-right: 0px; float: right; padding-top: 3px; }
+
+
+#ad_banner { float: left; margin-top: 5px; margin-bottom: 0px; width: 890px; height: 82px; background-image: url(/images/2010/bg_ad.jpg); background-repeat: no-repeat; }
+
+    #ad_banner .ad_banner_item { margin-top: 15px; float: left; width: 280px; height: 60px; }
+
+    #ad_banner .banner_item_0 { padding-left: 10px; }
+    #ad_banner .banner_item_1 { padding-left: 14px; }
+    #ad_banner .banner_item_2 { padding-left: 21px; }
+
+    #ad_banner .ad_banner_item .ad_banner_item_title { line-height: 14px; }
+
+    #ad_banner .ad_banner_item .ad_banner_item_desc { line-height: 12px; }
+        #ad_banner .ad_banner_item .ad_banner_item_desc a { text-decoration: none; color: Black; }
+            #ad_banner .ad_banner_item .ad_banner_item_desc a:hover { text-decoration: underline; }
+    #ad_banner .ad_banner_item td { vertical-align: top; }
+
+.footer { float: left; height: 45px; margin-top: 8px; width: 100%; padding-top: 3px; border-top: 3px solid #e5e5e5; }
+    .footer a, .footer span { font-size: 11px; }
+    .footer .item { line-height: 10px; }
+    .footer table span img { margin-left: 10px; }
+    .footer table span a { margin-left: 3px; }
+
+.footer_home { background-image: none; float: left; height: 45px; margin-top: 5px; width: 100%; }
+    .footer_home a, .footer_home span { font-size: 11px; }
+    .footer_home .item { line-height: 10px; }
+    .footer_home table span img { margin-left: 10px; }
+    .footer_home table span a { margin-left: 3px; }
+
+#Copyright { padding-left: 10px; font-size: 10px; float: left; line-height: 45px; vertical-align: middle; }
+
+.item { line-height: 45px; vertical-align: middle; font-size: 12px; text-align: left; width: 80px; }
+#item { float: right; line-height: 45px; vertical-align: middle; }
+    #item span { padding-left: 5px; padding-right: 20px; }
+    #item a { color: #000000; }
+#linkFooter { width: 890px; font-weight: normal; font-size: 12px; margin-top: 0px; display: none; }
+    #linkFooter span { padding-left: 23px; padding-right: 23px; border-right: 1px solid #cccccc; }
+
+    #linkFooter .linkLast { border-right: 0px; }
+
+    #linkFooter a { color: #000000; }
+
+/*----------------------------------------
+  Ask an Expert Sidebar
+----------------------------------------*/
+#prd-content-sidebar { width: 180px; float: right; margin-bottom: 20px; }
+ul.sidebar-askexpert { border-top: 2px solid #ccc; border-bottom: 2px solid #ccc; background: url(http://wfcache.advantech.com/www/Products/V2/images/askanexpert/askexpert-us.jpg) no-repeat right bottom; background-position: right bottom; }
+    ul.sidebar-askexpert li { list-style: none; margin: 0 5px 5px 5px; line-height: 16px; }
+        ul.sidebar-askexpert li.askexpert-title { margin: 0px 0px 10px 0px; font-weight: bold; background: #f3f3f3; text-align: center; line-height: 27px; }
+        ul.sidebar-askexpert li.askexpert-tollfree { padding-top: 5px; }
+        ul.sidebar-askexpert li a { color: #004280; font-size: 12px; display: block; height: 16px; padding-left: 25px; margin-bottom: 5px; }
+        ul.sidebar-askexpert li.askexpert-chat { background: url(http://wfcache.advantech.com/www/Products/V2/images/prd-askexpert-chat.gif) no-repeat; }
+        ul.sidebar-askexpert li.askexpert-callback { background: url(http://wfcache.advantech.com/www/Products/V2/images/prd-askexpert-callback.gif) no-repeat; }
+        ul.sidebar-askexpert li.askexpert-quote { background: url(http://wfcache.advantech.com/www/Products/V2/images/prd-askexpert-quote.gif) no-repeat; margin-right: 45px; }
+        ul.sidebar-askexpert li.askexpert-more { background: url(http://wfcache.advantech.com/www/Products/V2/images/prd-askexpert-more.png) no-repeat; margin-right: 45px; }
+
+ul.askexpert-jp { background-image: url(http://wfcache.advantech.com/www/Products/V2/images/askanexpert/askexpert-jp.jpg); }
+ul.askexpert-kr { background-image: url(http://wfcache.advantech.com/www/Products/V2/images/askanexpert/askexpert-kr.jpg); }  
+ul.askexpert-tw { background-image: url(http://wfcache.advantech.com/www/Products/V2/images/askanexpert/askexpert-tw.jpg); }
+
+
+/* Register Memeber
+----------------------------------------*/
+ul.sidebar-register { margin-top: 10px; margin-bottom: 10px; border: 1px solid #ccc; }
+    ul.sidebar-register li { list-style: none; color: #804f00; font-size: 11px; line-height: 13px; text-align: center; background-color: #f39800; }
+        ul.sidebar-register li.register-title { padding: 10px 0px 0px 0px; font-size: 17px; line-height: 18px; }
+            ul.sidebar-register li.register-title a { display: block; text-decoration: none; color: #fff; font-weight: bold; }
+        ul.sidebar-register li.register-title-2 { padding: 0px 0px 2px 0px; font-size: 16px; line-height: 18px; color: #fff; }
+        ul.sidebar-register li.register-curve { height: 20px; text-indent: -9999px; background-image: url(http://wfcache.advantech.com/www/Products/V2/images/prd-register-bg.jpg); background-repeat: no-repeat; }
+        ul.sidebar-register li.register-link { padding: 8px 0px 10px 0px; background: #fff; }
+            ul.sidebar-register li.register-link a { display: block; font-size: 15px; font-weight: bold; color: #bf7600; text-decoration: none; }
+                ul.sidebar-register li.register-link a:hover { color: #804f00; }
+                ul.sidebar-register li.register-link a img { margin: 1px 6px 0px 0px; vertical-align: text-top; background-color: #666; }
+                ul.sidebar-register li.register-link a:hover img { background-color: #4d4d4d; }

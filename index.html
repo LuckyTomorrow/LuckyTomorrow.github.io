@@ -1,330 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="研华MAS(Motion Studio)控制器！新一代二次開發控制器！非标自动化利器！">
-	<meta name="keyword" content="mas,motion studio,motion runtime motion s">
-    <meta name="author" content="">
-
-    <title>研华MAS控制器</title>
-	
-    <!-- css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/nivo-lightbox.css" rel="stylesheet" />
-	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
-	<link href="css/animate.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet">
-	<link rel="shortcut icon" type="image/x-icon" href="img/mas01.ico" media="screen"  />
-
-	<!-- template skin -->
-	<link id="t-colors" href="color/default.css" rel="stylesheet">
-	
-	<style type="text/css">
-		a.navbar-brand:link,a.navbar-brand:visited{
-			color:darkblue;
-		}
-		
-	</style>
-	<script>
-			(function(){
-			var bp = document.createElement('script');
-			var curProtocol = window.location.protocol.split(':')[0];
-			if (curProtocol === 'https') {
-				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-			}
-			else {
-				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-			}
-			var s = document.getElementsByTagName("script")[0];
-			s.parentNode.insertBefore(bp, s);
-		})();
-	</script>
-
-
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-
-
-<div id="wrapper">
-	
-    <nav class="navbar navbar-custom" role="navigation">
-        <div class="container navigation">
-		
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="http://www.advantech.com.cn/" target="_blank">
-                    <img src="img/logo.png" alt="" width="150" height="40" />&nbsp;研华科技有限公司
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-			  <ul class="nav navbar-nav">
-				<li><div id="cart"></div></li>
-				<li class="active"><a href="#mailto" class="black01">联系我们</a></li>
-				<li class="active"><a href="#masstudio" class="black01">MAS软件</a> </li>
-
-			  </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-
-        </div>
-        <!-- /.container -->
-    </nav>
-	
-	<!-- Section: intro -->
-    <section id="intro" class="intro">
-		<div class="intro-content">
-			<div class="container">
-				
-				<div class="row">
-					<div class="col-sm-6 col-md-6 col-lg-6">
-					<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
-						<img src="img/mas.png" class="img-responsive" alt="" />
-
-					</div>
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-6 slogan">
-						<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-						<h2>Mas控制器</h2>
-						<p><strong>一体式MAS控制器</strong></p>
-						<ul>
-							<li>基于Motion Studio二次开发软体平台</li>
-							<li>无风扇坚固型电脑硬件平台</li>
-							<li>Softmotion 运动控制核心，可实现高实时性要求的运动控制应用</li>
-							<li>4轴运动控制器、可根据实际应用弹性扩展成8轴控制器</li>
-						</ul>
-						<br />
-						<p><strong>整合式MAS控制器</strong></p>
-						<ul>
-							<li>可扩展轴、I/O的控制器，根据实际应用配置</li>
-							<li>4~8轴，16DI/16DO~64DI/64DO 选配</li>
-							<li>支持组态方式开发人机界面</li>
-							<li>丰富的硬件开发资源(4*USB ; 2*RS232 ; 2*LAN)</li>
-						</ul>
-						
-						
-					</div>					
-				</div>		
-			</div>
-		</div>		
-    </section>
-	
-	<!-- /Section: intro -->
-	<div class="divider-short"></div>
-	
-    <section id="content1" class="home-section">
-	
-		<div class="container">
-			<div class="row text-center heading">
-				<h3>Awesome features</h3>
-			</div>
-			
-			
-			<div class="row">
-				<div class="col-md-6">
-					<div class="wow fadeInLeft" data-wow-delay="0.2s">
-						<img src="img/feature.png" alt="" class="img-responsive" />
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="wow fadeInRight" data-wow-delay="0.3s">
-						<div class="features">							
-							<i class="fa fa-check fa-2x circled bg-skin float-left"></i>
-							<h5><a href="#whybasic" class="black01">Basic精简指令编程</a></h5>
-							<p>
-							易学易用，功能强大。簡單指令完成复杂运动;编译型语言，代码执行效率高;完全免费，编译出来的程序无授权问题.
-
-							</p>
-						</div>
-						<div class="features">							
-							<i class="fa fa-check fa-2x circled bg-skin float-left"></i>
-							<h5>丰富的调试手段</h5>
-							<p>
-							有大量调试工具，包括Terminal工具、轴测试工具、DI/DO测试工具等，使开发变得游刃有余.
-							</p>
-						</div>
-						<div class="features">							
-							<i class="fa fa-check fa-2x circled bg-skin float-left"></i>
-							<h5>大量设备开发常用工艺模块指令</h5>
-							<p>
-							Motion Studio不断增加行业工艺模块指令，使简单的指令实现复杂的应用.
-							</p>
-						</div>
-						<div class="features">							
-							<i class="fa fa-check fa-2x circled bg-skin float-left"></i>
-							<h5>弹性扩展，快速整合专案</h5>
-							<p>
-							
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</section>
-
-	<!-- /Section: content -->
-	
-	<div class="divider-short"></div>
-    <section id="works" class="home-section text-center">
-		<div class="container">
-			<div class="row text-center heading" id="whybasic">
-				<h3>Why Basic?</h3>
-			</div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12" >
-
-                    <div class="row gallery-item">
-                        <div class="col-md-3">
-							<a href="img/works/1.jpg" title="This is why we choose it" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="img/works/2.jpg" title="This is why we choose it" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/2.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="img/works/3.jpg" title="This is why we choose it" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/3.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="img/works/4.jpg" title="This is why we choose it" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/4.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-					</div>
-	
-                </div>
-            </div>	
-		</div>
-	</section>
-
-	<!-- /Section: content -->
-	
-	<div class="divider-short"></div>
-	
-    <section id="content2" class="home-section">
-	
-		<div class="container">
-			<div class="row text-center heading" id="masstudio">
-				<h3>Motion Studio软件安装包</h3>
-			</div>
-			
-			
-			<div class="row">
-				<div class="col-md-6">
-					<div class="wow fadeInLeft" data-wow-delay="0.2s">
-						<p>
-						Motion Studio一个编程开发工具，全面集成运动控制、视觉应用、I/O控制、流程控制、通讯以及编程环境，完成项目的各个方面应用开发。
-						</p>
-						<p>
-						
-						</p>
-						<div class="divider-short marginbot-30 margintop-30"></div>
-						<div class="features">	
-							<a href="http://pan.baidu.com/s/1jHKs9Cy" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s" target="_blank">百度云盘<br /> <small>MAS软件安装包</small></a>
-							
-						</div>
-						
-						<div class="features">							
-							<a href="Release Notes.HTM" class="btn btn-success btn-lg wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s" target="_blank">Show Me <br /> <small>Release note</small></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="wow fadeInRight" data-wow-delay="0.3s">
-						<img src="img/img-2.png" alt="" class="img-responsive" />
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-	</section>
-	
-
-
-	<section id="callaction" class="home-section paddingtop-40">	
-           <div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="callaction">
-							<div class="row">
-								<div class="col-md-8">
-									<div class="wow fadeInUp" data-wow-delay="0.1s">
-									<div class="cta-text" id="mailto">
-									<h3>Need more information about MAS?</h3>
-									<p>咨询专线：400-711-567
-									<br />
-									邮  件: weishi.lin@advantech.com.cn</p>
-									</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="wow lightSpeedIn" data-wow-delay="0.1s">
-										<div class="cta-btn">
-										<a href="mailto:weishi.lin@advantech.com.cn" class="btn btn-skin btn-lg">Mail to us</a>	
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-            </div>
-	</section>	
-
-	<footer>
-	
-
-		<div class="sub-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-md-6 col-lg-6">
-					
-				
-					<div class="wow fadeInLeft" data-wow-delay="0.1s">
-					<div class="text-left">
-					<p>&copy;Copyright 2014 - Advantech. All rights reserved.</p>
-					</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-6 col-lg-6">
-					<div class="wow fadeInRight" data-wow-delay="0.1s">
-					<div class="text-right margintop-30">
-						<p>Designed by <a href="http://www.advantech.com">Advantech</a></p>
-					</div>
-					</div>
-				</div>
-			</div>	
-		</div>
-		</div>
-	</footer>
-
+<body>
+    <div class="panel panel-default">
+        <img src="img/title.png"  class="img-rounded">
+        <img src="img/MAS-3245.png" class="img-circle">
+        <img src="img/MAS-5242-LG.png"  class="img-thumbnail">
+    </div>
+<div >
+    <button type="button" class="btn btn-default dropdown dropdown-toggle">dianwo
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li class="dropdown-menu-item">11</li>
+        <li class="dropdown-menu-item">11</li>
+        <li class="dropdown-menu-item">11</li>
+        <li class="dropdown-menu-item">11</li>
+        <li class="dropdown-menu-item">11</li>
+    </ul>
 </div>
-<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-
-	<!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>	 
+    <div class="btn-wrap">
+        <!-- btn-group分组容器 -->
+        <!-- btn-group-lg按钮组大小，不有btn-group-sm与btn-group-xs -->
+        <!-- btn-group-vertical垂直分组 -->
+        <!-- btn-group-justified等分按钮，自适应，尽量使用<a>标签 -->
+        <div class="btn-group btn-group-lg btn-group-vertical btn-group-justified">
+            <a class="btn btn-default" href="#">首页</a>
+            <a class="btn btn-default" href="#">产品展示</a>
+            <a class="btn btn-default" href="#">案例分析</a>
+            <!-- span中加类caret向下三角形 -->
+            <!-- 在上面btn-group后加dropup，则为向上三角形 -->
+            <a class="btn btn-default" href="#">联系我们<span class="caret"></span></a>
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">面板标题 </h3>
+        </div>
+        <div class="panel-body">
+            这是一个基本的面板
+        </div>
+        <div class="panel-footer">面板脚注</div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/nivo-lightbox.min.js"></script>
-    <script src="js/custom.js"></script>
-
-
 </body>
-
 </html>

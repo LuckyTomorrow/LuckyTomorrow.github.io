@@ -1,0 +1,1249 @@
+/* Created by Angie Lu 20141215 */
+
+/*----------------------------------------
+  Reset
+----------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;/*font: inherit;*//*vertical-align: baseline;	*/
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*
+ol, ul {
+	list-style: none;
+}
+*/
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+/*
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+/*----------------------------------------
+  Basic
+----------------------------------------*/
+body {
+	color: #333;
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;/*font-size: 100%;*/
+}
+div, p, a, li, td {
+	-webkit-text-size-adjust: none;
+}
+br {
+	height: 1px;
+	font-size: 1px;
+}
+a {
+	color: #004280;
+	text-decoration: none;
+	outline: none;
+	font-weight: normal;
+}
+a:hover, a:active, a:focus {
+	color: #004280;
+	text-decoration: underline;
+}
+:focus {
+	outline-color: transparent;
+	outline-style: none;
+}
+a img {
+	border: none;
+}
+.clear {
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+/*----------------------------------------
+  Global Font Setting
+----------------------------------------*/
+
+html[lang=zh-tw] body {
+	font-family: "微軟正黑體", "Microsoft JhengHei", "Arial", "Helvetica", "sans-serif";
+}
+html[lang=zh-cn] body {
+	font-family: "微軟雅黑體", "Microsoft YaHei", "Arial", "Helvetica", "sans-serif";
+}
+html[lang=ja] body {
+	font-family: "メイリオ", "Meiryo", "Arial", "Helvetica", "sans-serif";
+}
+html[lang=ko] body {
+	font-family: "맑은 고딕", "Malgun Gothic", "Arial", "Helvetica", " sans-serif";
+}
+/*----------------------------------------
+  Advantech Style
+----------------------------------------*/
+#container {
+	width: 100%;
+}
+/*----------------------------------------
+  Advantech Header
+----------------------------------------*/
+#advan-header {
+	padding-bottom: 20px;
+}
+.row-fluid {
+	width: 100%;
+	clear: both;
+}
+.row-fluid: after {
+	clear: both;
+}
+.row-maxwidth-98pct {
+	width: 98%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.row-maxwidth-100pct {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.row-gray-b93 {
+	background-color: #ededed;
+}
+.row-gray-b96 {
+	background-color: #f5f5f5;
+}
+.row-blue {
+	background-color: #cce0f2;
+}
+/*  Header Logo
+---------------------------------------- */
+#advan-header .header-logo a {
+	float: left;
+	margin: 20px 0px 15px;
+	text-indent: -9999px;
+	width: 325px;
+	height: 30px;
+	background-image: url(http://advcloudfiles.advantech.com/web/Images/common/advantech-logo.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    #advan-header .header-logo a {
+	background-image: url(http://advcloudfiles.advantech.com/web/Images/common/advantech-logo-retina.png);
+    background-size:325px 30px;
+}
+}
+/*  Header UserMenu
+----------------------------------------*/
+#advan-header .header-usermenu {
+	float: right;
+	/*margin: 32px 0px 17px;*/
+	margin: 32px 0px 13px;
+}
+#advan-header .user-history {
+	border-left: 2px solid #ccc;
+	margin-left: 18px;
+}
+.header-usermenu > li {
+	float: left;
+	list-style: none;
+}
+.header-usermenu > li > a {
+	display: block;
+	line-height: 16px;
+	margin-left: 18px;
+	color: #4d4d4d;
+}
+.header-usermenu > li > a:hover {
+	text-decoration: none;
+}
+.header-usermenu li a span {
+	color: #307abf;
+}
+.header-usermenu li.usermenu-myadv > a {
+	padding-left: 20px;
+	background: url(http://advcloudfiles.advantech.com/web/Images/common/icon-header-myadv.png) no-repeat center left;
+}
+.header-usermenu li.usermenu-register > a {
+	padding-left: 20px;
+	background: url(http://advcloudfiles.advantech.com/web/Images/common/icon-header-register.png) no-repeat center left;
+}
+/*  Account Popup
+----------------------------------------*/
+.usermenu-account {
+	position: relative;
+	padding-bottom: 4px;
+}
+.usermenu-account > a {
+	font-weight: bold;
+}
+.usermenu-account:hover .account-popup {
+	display: block;
+}
+.usermenu-account .account-popup {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: -50px;
+	width: 120px;
+	z-index: 2000;
+	border-bottom: solid 2px #ccc;
+}
+.account-popup ol {
+	padding: 20px 15px 10px;
+	border: solid 1px #999;
+	background-color: #fff;
+}
+.account-popup ol li {
+	list-style: none;
+	padding-bottom: 10px;
+}
+.account-popup ol li a {
+	display: block;
+	font-size: 12px;
+	color: #4d4d4d;
+}
+/*  Header Register Panel
+----------------------------------------*/
+body {
+	position: relative;
+}
+.header-panel-wrapper {
+	position: absolute;
+	top: 65px;
+	left: 0px;
+	z-index: 1000 !important;
+}
+.register-panel {
+	display: none;
+}
+.panel-control-up a {
+	display: block;
+	margin: 0 auto;
+	text-indent: -9999px;
+	width: 90px;
+	height: 15px;
+	background: url(http://advcloudfiles.advantech.com/web/Images/common/arrow-panel-control-up.png) no-repeat;
+}
+.panel-block {
+	/* margin: 0px 8.3% 40px; */
+	margin: 0px 12.5% 40px; /* only for login block disable */
+}
+.register-panel .panel-block {
+	float: left;
+}
+.panel-block h4 {
+	margin-top: 35px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #4c4c4c;
+}
+.panel-block h4.title-empty {
+	text-indent: -9999px;
+	margin-top: 20px;
+	line-height: 0;
+}
+.panel-btn a {
+	display: inline-block;
+	padding: 5px 30px;
+	background: #004280;
+	color: #fff;
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+}
+.panel-btn a:hover {
+	text-decoration: none;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+.record-btn a {
+	float: right;
+	padding: 5px 10px;
+	margin: -20px 20px 0 0;
+}
+.block-register {
+	/* width: 55.2%; */
+	width: 75%; /* only for login block disable */
+	margin-bottom: 60px;
+}
+.block-register > div {
+	background: url(http://advcloudfiles.advantech.com/web/Images/common/header-register-pic.jpg) no-repeat left top;
+	padding-left: 225px;
+	min-height: 150px;
+	margin-top: 15px;
+}
+.block-register p {
+	font-size: 13px;
+	line-height: 16px;
+	margin-bottom: 15px;
+}
+.block-login {
+	width: 18.75%;
+	margin-left: 0px;
+	margin-bottom: 60px;
+	display: none;	/*temporary */
+}
+.block-login > div {
+	margin-top: 15px;
+}
+.block-login .panel-link {
+	margin-bottom: 15px;
+}
+.block-login input[type="text"], .block-login input[type="password"] {
+	width: 90%;
+	padding: 5px 5%;
+	border: 1px solid #999;
+	color: #666;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 5px;
+}
+.block-login input[type="checkbox"] {
+	margin: 5px 5px 15px 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
+/*  Header Record Panel
+----------------------------------------*/
+.recent-panel {
+	display: none;
+}
+.compare-panel {
+	display: none;
+}
+.record-list {
+/*margin-top: 10px;	*/
+}
+.record-list li {
+	position: relative;
+	float: left;
+	list-style: none;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+.record-list li.record-empty {
+	width: 130px;
+	height: 130px;
+	border: solid 5px #eee;
+	background-image: url(http://advcloudfiles.advantech.com/web/Images/common/header-record-empty.png);
+	background-color: #eee;
+	text-indent: -9999px;
+}
+.record-list li .record-pic {
+	width: 130px;
+	height: 90px;
+	border: solid 5px #eee;
+}
+.record-list li .record-del a {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	width: 14px;
+	height: 14px;
+	text-indent: -9999px;
+	background: url(http://advcloudfiles.advantech.com/web/Images/common/icon-record-del.png) no-repeat;
+}
+.record-list li .record-text a {
+	display: block;
+	width: 120px;
+	height: 30px;
+	padding: 2px 10px 8px 10px;
+	background: #eee;
+	color: #333;
+	line-height: 15px;
+}
+/*  Header Toggle Item
+----------------------------------------*/
+/*.toggleSearch {
+	display: none;
+}*/
+.toggleMenu {
+	display: none;
+}
+/*.toggleSearch {
+	float: right;
+	margin: 25px 0px 20px;
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+}
+.toggleSearch img {
+	max-width: 20px;
+}*/
+.toggleMenu {
+	float: right;
+	margin: 0px 7px 0 0;
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+}
+.toggleMenu img {
+	max-width: 20px;
+}
+/*  Header Navigation
+----------------------------------------*/
+ul.header-nav {
+	float: left;
+}
+/*  Navigation Core
+----------------------------------------*/
+ul.header-nav li {
+	list-style: none;
+}
+ul.header-nav > li {
+	float: left;
+}
+ul.header-nav > li > a {
+	display: block;
+}
+/*  Navigation Style 
+----------------------------------------*/
+ul.header-nav a {
+	text-decoration: none;
+}
+ul.header-nav > li > a {
+	padding: 0px 12px;
+	margin-right: 0px;
+	line-height: 35px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #4d4d4d;
+}
+ul.header-nav > li.menubar-estore > a {
+	color: #004280;
+}
+ul.header-nav > li.show-mega > a {
+	background-color: #999;
+	color: #fff;
+}
+/*  Mega Menu Core
+----------------------------------------*/
+ul.header-nav > li > div {
+	position: absolute;
+	left: 0px;
+	overflow: auto;
+	z-index: 1000;
+	display: none;
+}
+ul.header-nav > li.show-mega > div {
+	display: block;
+}
+ul.header-nav .cols4 {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+ul.header-nav .col1 {
+	float: left;
+}
+ul.header-nav .col1 {
+	width: 25%;
+}
+ul.header-nav .cols-brdr {
+	border-top: solid 1px #ccc;
+	margin-top: 35px;
+}
+/*  Mega Menu Style
+----------------------------------------*/
+.row-brdrgray {
+	background-color: #fff;
+	border-top: 2px solid #999;
+	border-bottom: 2px solid #999;
+}
+ul.header-nav > li > div {
+	padding: 0 0 36px;
+	z-index: 1000;
+}
+ul.header-nav h5 {
+	margin: 0 20px;
+	padding-top: 35px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #4d4d4d;
+	font-weight: normal;
+}
+ul.header-nav h5.grouptitle-empty {
+	text-indent: -99999px;
+}
+ul.header-nav h5.grouptitle-abovesub {
+	padding-bottom: 0px;
+}
+ul.header-nav h5.grouptitle-sub {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 13px;
+}
+ul.header-nav h5 a {
+	color: #4d4d4d;
+	background-image: url(http://advcloudfiles.advantech.com/web/Images/common/arrow-megamenu.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-right: 15px;
+}
+ul.header-nav h5 a:hover {
+	text-decoration: underline;
+}
+ul.header-nav ol li {
+	margin: 0 20px;
+}
+ul.header-nav ol li a {
+	display: inline-block;
+	padding-bottom: 5px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #004280;
+}
+ul.header-nav ol li a:hover {
+	text-decoration: underline;
+}
+ul.header-nav ol li a.hidden {
+	visibility: hidden;
+}
+/* 2015.12.21 Featured Topics Style*/
+ul.header-nav ol li a span{
+        display: inline-block;
+        padding-top: 5px;
+        padding-bottom: 5px;             
+        color: #4d4d4d;
+}
+ul.header-nav ol li a:hover span {
+        text-decoration: none;
+}
+
+/* Product Menu Upadated on 8_13 
+----------------------------------------*/
+.header-nav .productMenu .col1 {
+	width:33%;
+}
+.header-nav .productMenu .cols-brdr {
+	margin-top: 15px!important;
+}
+.header-nav .productMenu h5 {	
+	padding-top:15px!important;
+	padding-bottom:8px!important;
+	word-break:keep-all;	
+}
+.header-nav .productMenu h5 a {
+	line-height: 1.5em;
+}
+
+.header-nav .productMenu .col1 h5:first-child {
+	padding-top: 35px!important;
+}
+
+.header-nav .productMenu .col1 li {
+	word-break:keep-all;
+}
+
+/*  Header Search
+----------------------------------------*/
+/*#advan-header .header-search {
+	float: right;*/
+	/*margin: 0px 0px 10px;*/
+	/*margin: 5px 0 0;
+}*/
+/* ---------- Desktops ---------- */
+/*.header-search div.search-outline {
+	border: 1px solid #ccc;
+	background: #fff;
+}
+.search-outline input.search-textfield {
+	float: left;
+	padding: 3px;
+	border: 0px solid #fff;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.search-outline .search-btn {
+	float: right;
+	margin: 3px 3px 0px;
+}
+.search-outline .search-btn img {
+	max-width: 16px;
+}*/
+/*----------------------------------------
+  Advantech Heading
+----------------------------------------*/
+#advan-heading {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*  Page Title
+----------------------------------------*/
+.page-title h1 {
+	font-size: 26px;
+	font-weight: normal;
+	color: #4d4d4d;
+}
+/*  Breadcrumb
+----------------------------------------*/
+#advan-heading .breadcrumb {
+	margin-bottom: 20px;
+}
+#advan-heading .breadcrumb li {
+	display: inline;
+	list-style: none;
+	font-size: 13px;
+	color: #666;
+}
+#advan-heading .breadcrumb li a {
+	padding: 0px 2px;
+	font-weight: bold;
+}
+#advan-heading .breadcrumb li .nolink-crumb {
+        padding: 0px 2px;
+        font-weight: bold;
+        color:#004280;
+}
+#advan-heading .breadcrumb li .last-crumb {
+	padding: 0px 2px;
+	font-weight: bold;
+}
+/*----------------------------------------
+  Advantech Footer
+----------------------------------------*/
+#advan-footer {
+	clear: both;
+	padding-top: 20px;
+}
+.row-brdrwhite {
+	border-top: solid 4px #fff;
+}
+/*  AOnline Items
+----------------------------------------*/
+.aonline-logo {
+	float: left;
+	width: 20.8%;
+	margin: 17px 0;
+	padding-top: 16px;
+	padding-right: 6.25%;
+	padding-left: 8.33%;
+}
+.aonline-logo .logo-pic {
+	text-align: right;
+}
+.aonline-logo .logo-pic img {
+	width: 100%;
+	max-width: 165px;
+}
+.aonline-logo .logo-tgln {
+	display: none;
+}
+.aonline-contact {
+	float: left;
+	border-left: solid 3px #f2f7fc;
+	width: 55.9%;
+	margin: 17px 0;
+	padding: 10px 0;
+	padding-left: 6.25%;
+}
+.aonline-contact li {
+	float: left;
+	list-style: none;
+	margin-right: 5.38%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #333;
+	font-size: 16px;
+	line-height: 22px;
+	padding-left: 38px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 22px 22px;
+}
+.aonline-contact li.phone-2 {
+	margin-top: -2px;
+	line-height: 16px;
+	background-position: left 7px;
+}
+.aonline-contact li a {
+	color: #333;
+}
+.aonline-contact li.contact-buy {
+	background-image: url(http://advcloudfiles.advantech.com/web/Images/common/icon-aonline-buy-s.png);
+}
+.aonline-contact li.contact-chat {
+	background-image: url(http://advcloudfiles.advantech.com/web/Images/common/icon-aonline-chat-s.png);
+}
+.aonline-contact li.contact-chat-cn {
+	background-image: url(http://advcloudfiles.advantech.com/web/Images/common/icon-aonline-chat-s-cn.png);
+}
+.aonline-contact li.contact-phone {
+	background-image: url(http://advcloudfiles.advantech.com/web/Images/common/icon-aonline-phone-s.png);
+}
+.aonline-contact li.contact-buy-svg {
+           background-image: url(http://advcloudfiles.advantech.com/web/Images/common/icon-aonline-buy.svg);
+}
+.aonline-contact li.contact-chat-svg {
+           background-image: url(http://advcloudfiles.advantech.com/web/Images/common/icon-aonline-chat.svg);
+}
+.aonline-contact li.contact-phone-svg {
+           background-image: url(http://advcloudfiles.advantech.com/web/Images/common/icon-aonline-phone.svg);
+}
+/*  Footer Navigation
+----------------------------------------*/
+.footer-nav-wrapper {
+	margin: 30px 0 0;
+}
+.footer-nav-wrapper .footer-nav {
+	float: left;
+	width: 21.8%;
+	margin: 0 1.04% 0 2.08%;
+	margin-bottom: 30px;
+}
+.footer-nav .nav-title {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 17px;
+	margin-bottom: 10px;
+}
+.footer-nav ul li {
+	list-style: none;
+	line-height: 15px;
+	margin-bottom: 5px;
+}
+.footer-nav ul li a {
+	display: inline-block;
+	color: #333;
+}
+/*  Footer 
+----------------------------------------*/
+.footer-wrapper {
+	margin: 10px 0px 0;
+	padding-bottom: 10px;
+}
+/*  Footer Language
+----------------------------------------*/
+.footer-language {
+	float: right;
+	margin: 0 2.08%;
+	margin-bottom: 30px;
+}
+.footer-language a {
+	display: block;
+	font-size: 13px;
+	line-height: 20px;
+	color: #4d4d4d;
+	padding-left: 30px;
+	background-repeat: no-repeat;
+    background-position: left center;
+}
+.footer-language a.language-earth {
+           background-image: url(http://advcloudfiles.advantech.com/web/Images/common/icon-footer-language.png);
+}
+.footer-language a.language-earth-svg {
+           background-image: url(http://advcloudfiles.advantech.com/web/Images/common/icon-footer-language.svg);
+}
+/*  Footer Copyright
+----------------------------------------*/
+.footer-copyright {
+	float: left;
+	margin: 0 2.08%;
+	margin-bottom: 30px;
+}
+.footer-copyright li {
+	float: left;
+	list-style: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: #666;
+	padding: 0 8px;
+	border-left: 1px solid #999;
+}
+.footer-copyright li.copr-first {
+	padding-left: 0px;
+	border-left: none;
+}
+.footer-copyright li a {
+	display: block;
+	color: #666;
+}
+/*  Footer Language Panel
+----------------------------------------*/
+body {
+	position: relative;
+}
+.footer-panel-wrapper {
+	position: absolute;
+	bottom: 80px;
+	left: 0px;
+	z-index: 1000 !important;
+}
+.language-panel {
+	display: none;
+}
+.panel-control-down a {
+	display: block;
+	margin: 0 auto;
+	text-indent: -9999px;
+	width: 90px;
+	height: 15px;
+	background: url(http://advcloudfiles.advantech.com/web/Images/common/arrow-panel-control-down.png) no-repeat;
+}
+.lang-desc {
+	margin: 30px 8.3% 0;
+	font-size: 13px;
+	line-height: 16px;
+	font-style: italic;
+	color: #333;
+}
+ol.lang-list {
+/*margin-top: 10px;	*/
+}
+ol.lang-list li {
+	float: left;
+	width: 85px;
+	margin-top: 10px;
+	margin-left: 15px;
+	list-style: square;
+	color: #808080;
+}
+ol.lang-list li a {
+	display: block;
+	font-size: 12px;
+	color: #004280;
+}
+/*----------------------------------------
+  Contact Advantech Slide Panel
+----------------------------------------*/
+.slide-out-div {
+	width: 300px;
+	/*height: 145px;*/
+	min-height: 145px;
+	background: #fafafa;
+	border: 5px solid #b3b3b3;
+	z-index: 5000;
+}
+.slide-out-div .handle {
+	margin-top: -5px;
+	margin-left: -5px;
+	
+	width: 30px;
+	height: 165px;
+    text-indent: -99999px;
+}
+.slide-out-div .panel-left {
+	float: left;
+	width: 165px;
+	padding: 25px 0px 0px 15px;
+}
+.slide-out-div .panel-left h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 0 5px;
+}
+.slide-out-div .panel-left h4 {
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 0 5px;
+}
+.slide-out-div .panel-left ul {
+	margin: 0;
+	padding: 10px 0 4px;
+}
+.slide-out-div .panel-left li {
+	list-style: none;
+	font-size: 13px;
+	line-height: 16px;
+	padding: 0 0 4px 25px;
+}
+.slide-out-div .panel-left li.callback {
+	background: url(http://advcloudfiles.advantech.com/web/Images/common/contact-callback.gif) no-repeat;
+}
+.slide-out-div .panel-left li.livechat {
+	background: url(http://advcloudfiles.advantech.com/web/Images/common/contact-livechat.gif) no-repeat;
+}
+.slide-out-div .panel-left li.emailus {
+	background: url(http://advcloudfiles.advantech.com/web/Images/common/contact-emailus.gif) no-repeat;
+}
+.slide-out-div .panel-left li.qq {
+	background: url(http://advcloudfiles.advantech.com/web/Images/common/contact-qq-offical.gif) no-repeat;
+}
+.slide-out-div .panel-right {
+	float: right;
+	width: 90px;
+	padding: 20px 15px;
+}
+.slide-out-div .panel-right img {
+	border: 2px solid #e5e5e5;
+}
+/*----------------------------------------
+  CMS List Style for Page with Sidebar
+----------------------------------------*/
+
+/* Main List
+----------------------------------------*/
+.main-list .listItem li {
+	width: 100%;
+	padding: 20px 0px;	
+	list-style: none;
+}
+.main-list .listItem .listPic {
+	float: left;
+	/*width: 122px;*/
+	width: 17%;	
+    /*margin-right: 18px;*/
+	margin-right: 2.5%;		
+	border: 1px solid #ccc;
+}
+.main-list .listItem .emptyPic .listPic {
+	display: none;
+}
+.main-list .listItem .listPic img {
+	width: 100%;
+	max-width: 122px;
+}
+.main-list .listItem .listText {
+	float: left;
+	/*width: 576px;*/
+	width: 80%;
+	font-size: 12px;
+	line-height: 16px;	
+}
+.main-list .listItem .emptyPic .listText {
+	float: none;
+	width: 100%;
+}
+.main-list .listText h4.tag {
+	font-size: 13px;
+	font-weight: bold;	
+	padding-bottom: 5px;
+}
+.main-list .listText h3 {
+	font-size: 14px;
+	font-weight: normal;	
+	padding-bottom: 5px;
+}
+.main-list .listText h4 {
+	font-size: 13px;
+	font-weight: normal;
+	padding-bottom: 5px;	
+}
+.main-list .listText h5 {
+	font-size: 12px;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+
+/* Main Article
+----------------------------------------*/
+.main-article .article-heading {
+	padding: 20px 0 10px;
+}
+.main-article .article-heading h2 {
+	font-size: 18px;
+	font-weight: normal;
+}
+.main-article h5 {
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+	padding-bottom: 10px;
+}
+.main-article p {
+	font-size: 12px;
+	line-height: 18px;
+	padding: 10px 0;
+}
+.main-article ul {
+	padding: 10px 0;
+}
+.main-article ul li {
+	list-style: square;
+	margin-left: 20px;
+	font-size: 12px;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+
+.main-article p {
+	margin: 20px 0;
+	line-height: 18px
+}
+
+.main-article p img {
+	padding: 10px
+}
+
+.main-article ul li {
+	list-style-position: inside
+}
+
+.main-article li {
+	line-height: 18px
+}
+
+.main-article table, .main-article tr, .main-article th, .main-article td {
+	border: 1px solid
+}
+/* Pagination, Action Buttons
+----------------------------------------*/
+ol.pagination {
+	text-align: center;
+}
+ol.pagination, ol.act-btn {
+	padding: 40px 0;
+}
+ol.pagination li, ol.act-btn li {
+	display: inline;
+	list-style: none;
+}
+ol.pagination li a, ol.act-btn li a {
+	padding: 4px 8px;
+	margin: 0 4px;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	color: #4d4d4d;
+}
+ol.pagination li.active_page a, ol.act-btn li.active a {
+	border: 1px solid #808080;
+	background-color: #808080;
+	color: #fff;
+}
+ol.pagination li:hover a, ol.act-btn li:hover a {
+	border: 1px solid #ccc;
+	background-color: #ccc;
+	color: #4d4d4d;
+}
+/*----------------------------------------
+  CMS / PIS Content style
+----------------------------------------*/
+.cms-content p {
+	margin: 20px 0;
+	line-height: 18px;
+}
+.cms-content p img {
+	padding: 10px;
+}
+.cms-content ul li {
+	list-style-position: inside;
+}
+.cms-content li {
+	line-height: 18px;
+}
+.cms-content table, .cms-content tr, .cms-content th, .cms-content td {
+	border: 1px solid; /* don't delet solid */
+}
+
+/*----------------------------------------
+  Search Box
+----------------------------------------*/
+
+.block-search {
+	margin: 0 auto;
+	padding: 1% 3%;
+}
+
+.search-Mainbox {
+	width: 100%;
+	border: 1px solid #ccc;
+	margin: 2.5% auto 0 auto;
+	padding: 0 0;
+	position: relative;
+	background-color: #fff;
+}
+
+.search-input {
+	float: left;
+	width: 86%;
+	padding: 0 0 0 1%;
+	margin: 0;
+	font-size: 26px;
+	font-weight: normal;
+	vertical-align: middle;
+	color: #4d4d4d;
+	border: 0;
+	height: 60px;
+	position: relative;
+}
+
+.search-btnClear {
+	float: left;
+	border: 0;
+	outline: 0;
+	padding: 0 0;
+	margin: 0 0 0 2%;
+	width: 15px;
+	height: 68px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("css-img/close.png");
+	vertical-align: middle;
+	cursor: pointer;
+	position: absolute;
+	right: 15%;
+}
+
+.search-input::-ms-clear {
+    display: none;
+}
+
+.search-btnClear .btn-clear:before {
+	content: ' ';
+	position: relative;
+	display: inline-block;
+}
+
+.search-btnSubmit {
+	float: right;
+	background-color: #004280;
+	opacity: .75;
+	filter: alpha(opacity=75);
+	box-shadow: none;
+	margin: 0 0;
+	white-space: nowrap;
+	border: 0;
+	outline: 0;
+	height: 66px;
+	width: 13%;
+	vertical-align: middle;
+	cursor: pointer;
+    *background-repeat: no-repeat;
+    *background-position: center;
+    *background-image: url("css-img/searchSubmitBTN.png");
+}
+
+.search-btnSubmit:before {
+	content: ' ';
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("css-img/searchSubmitBTN.png");
+}
+
+.search-panel .search-suggestionBox {
+	font-size: 16px;
+	width: 100%;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-top: 0;
+	padding: 0 0;
+	margin: 0 auto;
+}
+
+a.search-suggestion-select {
+	padding: 1.5% 2%;
+	display:block;
+	text-decoration:none;
+	border-bottom:1px solid #ebebeb;
+}
+
+.search-select-focus, a.search-suggestion-select:hover {
+	background-color: #ccc;
+	text-decoration: none;
+}
+
+a.search-suggestion-select h4 {
+	margin-top: 15px;
+	font-size: 16px;
+	font-weight:normal;
+	display: block;
+	line-height: 1.5em;
+	color:#004280;
+	text-decoration:none;
+	float: none;
+}
+
+a.search-suggestion-select h4:first-child {
+	margin-top: 0;
+}
+
+a.search-suggestion-select .item-desc {
+	font-size: 14px;
+	margin: 0 0 0 0;
+	line-height: 1.5em;
+	color:#4d4d4d;
+	display: block;
+	text-decoration:none;
+}
+
+.search-panel .product-item {
+	border: 0;
+	width: auto!important;
+}
+
+.search-panel .resouces-item {
+	margin: 0 0 0 0;
+	border: 0;
+	padding:0 0;
+}
+
+.search-panel .relatedContent-att {
+	margin: 1% 0;
+	font-size: 13px;
+	color: #4d4d4d;
+}
+
+.search-panel {
+	display: none;
+}
+
+.header-usermenu li.usermenu-search > a {
+	margin-left:12px;
+	padding-left: 20px;
+	background: url(css-img/icon-header-search-20x20.png) no-repeat center left;
+}
+
+.header-usermenu li.usermenu-search a:hover, a:active, a:focus {
+	text-decoration:none;
+}
+
+.toggleMenu {
+	margin: 0px 7px 0 0;
+	width: 20px;
+	height: 20px;
+}
+
+/*.search-panel .separteLine {
+	padding: 0 0;
+	margin: 10px auto;
+	width: 95%;
+	max-width: 890px;
+	border-bottom: 1px solid #ccc;
+}*/

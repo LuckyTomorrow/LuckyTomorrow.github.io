@@ -1,0 +1,28 @@
+﻿
+p{			font-size:12px;
+			color:#333;
+			line-height:18px;}
+div.tab_container{
+            clear: left;
+            width: 100%;
+            border: 1px solid #fff;
+            border-top: none;
+            background: #fff;  }
+.maincontent h1{
+	font-size:18px;
+	color:#00669f;
+}
+.feature{
+	height:240px;
+	width:275px;
+	float:left;
+	margin-right:32px;}
+.feature p{ 
+	margin:10px 0; 
+	padding-right:10px;}
+.feature h2{
+	padding:0;
+	margin:0;
+	font-size:14px;
+	color:#00669f;
+}
