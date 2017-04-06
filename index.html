@@ -99,8 +99,43 @@
                 mp.attr('autoplay','true');
                 mp.play();
             });
-        })
-
+			//获取url中的参数
+        	function getUrlParam(name) {
+	            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	            if (r != null) return unescape(r[2]); return null; //返回参数值
+        	}        	
+		    
+            function caseReturn(){
+            	var itemnum = getUrlParam("it");
+            	if(itemnum>=1&&itemnum<=4){
+            		for (var i=0;i<4;i++)
+					{
+						$("#masitem > li").eq(i).attr("class",null);
+						$("#mascontent > div").eq(i).attr("class","tab-pane fade");
+					}
+            	}
+            	switch (itemnum){
+	            	case "1":
+	            		$("#masitem > li").eq(0).addClass("active");
+	            		$("#mascontent > div").eq(0).addClass(" in active");
+	            		break;
+	            	case "2":
+	            		$("#masitem > li").eq(1).addClass("active");
+	            		$("#mascontent > div").eq(1).addClass(" in active");
+	            		break;
+	            	case "3":
+	            		$("#masitem > li").eq(2).addClass("active");
+	            		$("#mascontent > div").eq(2).addClass(" in active");
+	            		break;
+	            	case "4":
+	            		$("#masitem > li").eq(3).addClass("active");
+	            		$("#mascontent > div").eq(3).addClass(" in active");
+	            		break;
+            	}
+            }
+            caseReturn();
+        });
     </script>
 
 </head>
@@ -123,35 +158,33 @@
     </div>
 </div>
 
-
-
 <div class="container" style="margin: 2px auto">
     <div class="row">
         <div class="col-md-offset-1 col-md-10  col-lg-offset-1 col-lg-10">
             <div class="tabbable">
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs" id="masitem">
                     <li class="active">
                         <a href="#product"  data-toggle="tab" class="tab" role="button" style="font-weight: bold;">
                             MAS控制器
                         </a>
                     </li>
-                    <li >
+                    <li class="">
                         <a href="#vedio" id='item2' data-toggle="tab" class="btn" role="button">
                             <span style="font-weight: bold;">教学视频</span>
                         </a>
                     </li>
-                    <li >
+                    <li class="">
                         <a href="#note" id='item3' data-toggle="tab" class="btn" role="button">
                             <span style="font-weight: bold;">应用案例</span>
                         </a>
                     </li>
-                    <li >
+                    <li class="">
                         <a href="#download" id='item4' data-toggle="tab" class="btn" role="button">
                             <span style="font-weight: bold;">资料下载</span>
                         </a>
                     </li>
                 </ul>
-                <div class="tab-content">
+                <div class="tab-content" id="mascontent">
                     <div class="tab-pane fade in active" id="product">
                         <div>
                             <h2><span style="font-size: 20px;color: #00669f;font-weight: bold">基于Motion Studio软件的运动控制器</span></h2>
@@ -163,17 +196,17 @@
                         </div>
                         <div>
                             <h2><span style="font-size: 20px;color: #00669f;font-weight: bold">MAS控制器工程架构</span></h2>
-                            <div class="row">
-                                <div class="col-md-offset-1 col-md-10" style="text-align:center">
-                                    <img src="img/jiagou.png" >
+                            <div class="row" >
+                                <div class="col-md-offset-2 col-md-8">
+                                    <img src="img/jiagou.png" width="100%">
                                 </div>
                             </div>
                         </div>
                         <div>
                             <h2><span style="font-size: 20px;color: #00669f;font-weight: bold">Motion Studio：一个开发环境集成所有控制</span></h2>
                             <div class="row">
-                                <div class="col-md-offset-1 col-md-10" style="text-align:center">
-                                    <img src="img/control.png" >
+                                <div class="col-md-offset-2 col-md-8"  style="text-align:center">
+                                    <img src="img/control.png">
                                 </div>
                             </div>
                         </div>
@@ -255,10 +288,48 @@
                         </div>
 
                     </div>
-                    <div class="tab-pane fade" id="note">
-                        待续。。。
-
-                    </div>
+				    <div class="tab-pane fade" id="note" >
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="media">
+								    <a class="pull-left " href="case01.html#masitem">
+								        <img class="media-object" src="img/case1.jpg" style="width: 90%" >
+								    </a>
+								    <div class="media-body">
+								        <h3 class="media-heading text-info"><a href="case01.html#masitem">产线锁螺丝机</a></h3>
+								        <hr>
+								        <p style="margin-bottom:18px;font-weight: bold" class="text-muted">
+								        	&nbsp;&nbsp;&nbsp;&nbsp;自动锁螺丝机是自动化产线中出现频率很高的设备，
+										用于取代传统手工拧紧螺丝的机器。自动锁螺丝机一般会要求上料、取料、螺丝输送、锁附、
+										检验等动作全自动完成。随着产线自动化生产要求越来越高，自动锁螺丝机要能提供更高速的生产
+										方式，并能很好结合运动控制与图像检测，以减少人工操作成本与降低错误率。此外...
+										-><a href="case01.html#masitem"><spaan style="color: red;">more</spaan></a>
+										</p>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="media">
+								    <a class="pull-left " href="case01.html#masitem">
+								        <img class="media-object" src="img/case1.jpg" style="width: 90%" >
+								    </a>
+								    <div class="media-body">
+								        <h3 class="media-heading text-info"><a href="case01.html#masitem">产线锁螺丝机</a></h3>
+								        <hr>
+								        <p style="margin-bottom:18px;font-weight: bold" class="text-muted">
+								        	&nbsp;&nbsp;&nbsp;&nbsp;自动锁螺丝机是自动化产线中出现频率很高的设备，
+										用于取代传统手工拧紧螺丝的机器。自动锁螺丝机一般会要求上料、取料、螺丝输送、锁附、
+										检验等动作全自动完成。随着产线自动化生产要求越来越高，自动锁螺丝机要能提供更高速的生产
+										方式，并能很好结合运动控制与图像检测，以减少人工操作成本与降低错误率。此外...
+										-><a href="case01.html#masitem"><spaan style="color: red;">more</spaan></a>
+										</p>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
                     <div class="tab-pane fade" id="download">
                         <div>
                             <h2><span style="font-size: 20px;color: #00669f;font-weight: bold">Motion Studio软件下载</span></h2>
@@ -432,9 +503,6 @@
                                                 <li>虚拟控制器仿真开发</li>
                                             </ul>
                                         </div>
-
-
-
                                     </div>
                                 </div>
                             </div>
