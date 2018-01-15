@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>研华MAS控制器</title>
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- SmartAddon.com Verification -->
+    <meta name="smartaddon-verification" content="936e8d43184bc47ef34e25e426c508fe" />
+	
+    <link rel="shortcut icon" href="studio.ico"/>
+    <link rel="bookmark" href="studio.ico"/>
+    <!-- site css -->
+    <!-- Loading Bootstrap -->
+    <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="dist/js/vendor/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "dist/js/vendor/video-js.swf"
+    </script>
+  </head>
+
+  <body style="background-color: #f1f2f6;">
+    
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #fff;height: 60px;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          </button>
+          <a class="navbar-brand" href="#" style="margin-top: 0; padding-top: 5px;">
+            <img src="img/logo.png" alt="Compas" height="50">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html">首页</a></li>
+            <li ><a href="mas.html">MAS控制器</a></li>
+            <li class="active"><a href="vedio.html">教学视频</a></li>
+            <li><a href="case.html">应用案例</a></li>
+            <li><a href="download.html">资料下载</a></li>
+          </ul>
+          <!--
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">联系我们</a></li>
+          </ul>
+          -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="panel panel-default" style="margin-top: 60px; background-color: #f1f2f6; border-width: 0;">
+          <div class="panel-body">
+            <div class="col-md-8 col-sm-8 col-xs-12" id="player">
+              <!--视频内容部分-->
+              <video id="mp4" src="vedio/01.mp4" controls="controls" width="100%" height="auto">
+              </video>
+
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12" id="list" style="overflow:auto;">
+              <div class="list-group " id="items" >
+                <a href="#" class="list-group-item active" onclick="watchVedio(this,1);">
+                  <span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;如何开始一个工程
+                </a>
+                <a href="#" class="list-group-item" onclick="watchVedio(this,2);">
+                  <span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;组态人机连接MAS控制器
+                </a>
+                <a href="#" class="list-group-item" onclick="watchVedio(this,3);">
+                  <span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;轴运动测试工具
+                </a>
+                <a href="#" class="list-group-item" onclick="watchVedio(this,4);">
+                  <span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;终端工具
+                </a>
+                <a href="#" class="list-group-item" onclick="watchVedio(this,5);">
+                  <span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;编程助手工具
+                </a>
+                <a href="#" class="list-group-item" onclick="watchVedio(this,6);">
+                  <span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;VR表工具
+                </a>
+                <a href="#" class="list-group-item" onclick="watchVedio(this,7);">
+                  <span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;轴参数、状态监测工具
+                </a>
+                <a href="#" class="list-group-item" onclick="watchVedio(this,8);">
+                  <span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;IO监测工具
+                </li>
+                <a href="#" class="list-group-item" onclick="watchVedio(this,9);">
+                  <span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;变量监测、断点及单步操作
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      
+    </div> <!-- /container -->
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        var height = $('#player').innerHeight();
+        $('#list').height(height);
+
+      });
+
+      function watchVedio(obj,number){
+          $('#items').children().removeClass('active');
+          $(obj).addClass('active');
+
+          switch(number){
+            case 1:
+              $('#mp4').prop('src','vedio/01.mp4');
+              break;
+            case 2:
+              $('#mp4').prop('src','vedio/02.mp4');
+              break;
+            case 3:
+              $('#mp4').prop('src','vedio/03.mp4');
+              break;
+            case 4:
+              $('#mp4').prop('src','vedio/04.mp4');
+              break;
+            case 5:
+              $('#mp4').prop('src','vedio/05.mp4');
+              break;
+            case 6:
+              $('#mp4').prop('src','vedio/06.mp4');
+              break;
+            case 7:
+              $('#mp4').prop('src','vedio/07.mp4');
+              break;
+            case 8:
+              $('#mp4').prop('src','vedio/08.mp4');
+              break;
+            case 9:
+              $('#mp4').prop('src','vedio/09.mp4');
+              break;
+          }
+        }
+
+    </script>
+
+  </body>
+</html>
